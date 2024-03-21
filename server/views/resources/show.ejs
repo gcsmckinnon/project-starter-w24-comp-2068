@@ -1,0 +1,21 @@
+<%- include("../shared/_header") %>
+
+<div class="container mt-5">
+    <h1>Resources List</h1>
+
+    <hr class="my-5">
+
+    <a href="/resources/<%= resource.id %>/edit">Edit resource</a>
+
+    <div class="resource ca-resource <%= resource.type === 'QUESTION' ? 'bg-dark text-white' : 'bg-white text-dark' %>">
+        <div class="resource-body">
+            <p class="resource-text">
+                <%= resource.content.replace(/\[blank\d+\]/g, "______") %>
+            </p>
+        </div>
+    </div>
+
+    <a href="/resources">Back to resources</a>
+</div>
+
+<%- include("../shared/_footer") %>

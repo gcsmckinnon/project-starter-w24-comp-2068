@@ -1,0 +1,23 @@
+.standard-link {
+    border: none;
+    background-color: transparent;
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity,1));
+    text-decoration: underline;
+    display: inline;
+}
+
+.ca-resource {
+    width: 200px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    margin: 10px;
+    font-size: 14px; /* Adjust font size as needed */
+    font-family: Arial, sans-serif; /* Resources Against Humanity uses Helvetica Neue, but Arial is a close alternative */
+}
+
+.ca-resource .resource-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
